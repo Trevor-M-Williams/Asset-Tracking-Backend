@@ -17,4 +17,4 @@ app.use("/api/locations", require("./routes/locationRoutes"));
 
 app.use(errorHandler);
 
-app.listen(5000, () => console.log(`listening on port ${port}`));
+app.listen(port, () => console.log(`listening on port ${port}`));

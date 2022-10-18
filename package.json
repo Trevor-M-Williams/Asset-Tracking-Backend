@@ -16,6 +16,5 @@
     "express-async-handler": "^1.2.0",
     "mongoose": "^6.6.5",
     "nodemon": "^2.0.20"
-  },
-  "proxy": "http://localhost:5000"
+  }
 }
