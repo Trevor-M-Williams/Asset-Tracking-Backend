@@ -2,11 +2,19 @@ const mongoose = require("mongoose");
 
 const locationSchema = mongoose.Schema(
   {
+    name: {
+      type: String,
+      required: true,
+    },
+    assetType: {
+      type: String,
+      required: true,
+    },
     lat: {
       type: Number,
       required: true,
     },
-    long: {
+    lng: {
       type: Number,
       required: true,
     },

@@ -16,8 +16,10 @@ const getLocations = asyncHandler(async (req, res) => {
 //  @access Private
 const setLocation = asyncHandler(async (req, res) => {
   const location = await Location.create({
+    name: req.body.name,
+    assetType: req.body.assetType,
     lat: req.body.lat,
-    long: req.body.long,
+    lng: req.body.lng,
   });
 
   res.status(200).json(location);
